@@ -12,7 +12,9 @@
 <meta name="description" content="Manshwi Negi, clinical psychologist. Psychodynamic and trauma-informed therapy for anxiety, trauma, depression and relationships. Online across India.">
 <meta property="og:title" content="Manshwi Negi — Clinical Psychologist">
 <meta property="og:description" content="Psychodynamic and trauma-informed therapy. Online across India.">
-<meta property="og:image" content="portrait.jpg">
+<meta property="og:image" content="https://aryachoudhary10.github.io/manshwi-negi/portrait.jpg">
+<meta property="og:url" content="https://aryachoudhary10.github.io/manshwi-negi/">
+<meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,300;1,9..144,400&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
@@ -105,7 +107,11 @@ header.scrolled{background:rgba(244,239,230,.97);box-shadow:0 1px 0 var(--line);
 @keyframes fade{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
 .hero .lead{margin-bottom:32px}
 .cta-row{display:flex;gap:12px;flex-wrap:wrap}
-.creds{display:flex;flex-wrap:wrap;gap:8px;margin-top:36px}
+.reassure{display:flex;align-items:center;gap:8px;margin-top:16px;font-size:.88rem;color:var(--ink-soft)}
+.reassure svg{color:#3aa36b;flex-shrink:0}
+.feel{display:block;font:italic 300 1.02rem/1.45 var(--serif);color:var(--moss);margin:-2px 0 12px;transition:color .5s}
+.help:hover .feel{color:var(--clay-soft)}
+.creds{display:flex;flex-wrap:wrap;gap:8px;margin-top:30px}
 .chip{font-size:.8rem;padding:7px 14px;border:1px solid var(--line);border-radius:999px;color:var(--ink-soft);background:rgba(255,255,255,.45)}
 .hero-photo{position:relative;max-width:440px;width:100%;margin-left:auto}
 .hero-photo .arch{position:relative;aspect-ratio:4/5.2;border-radius:999px 999px var(--radius) var(--radius);overflow:hidden;background:var(--sage);z-index:1;box-shadow:0 40px 80px -40px rgba(31,42,36,.5)}
@@ -164,7 +170,7 @@ header.scrolled{background:rgba(244,239,230,.97);box-shadow:0 1px 0 var(--line);
 .quote{padding:140px 0;text-align:center;background:var(--moss-deep);color:var(--paper)}
 .quote blockquote{font:300 clamp(1.6rem,3.8vw,3rem)/1.28 var(--serif);max-width:20em;margin:0 auto;position:relative;z-index:1}
 .quote blockquote em{color:var(--clay-soft)}
-.quote .w{opacity:.18;transition:opacity .5s}
+.quote .w{opacity:.35;transition:opacity .5s}
 .quote .w.on{opacity:1}
 .quote cite{display:block;margin-top:26px;font:500 .78rem var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--sage);font-style:normal}
 .quote .s-ring{border-color:rgba(232,184,154,.25)}
@@ -415,7 +421,6 @@ html.lenis,html.lenis body{height:auto;scroll-behavior:auto}
       <li><a href="#services">Services</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#process">Process</a></li>
-      <li><a href="#articles">Articles</a></li>
       <li><a href="#faq">FAQ</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
@@ -444,6 +449,7 @@ html.lenis,html.lenis body{height:auto;scroll-behavior:auto}
         <a href="#contact" class="btn btn-primary">Book an appointment <span class="arr">→</span></a>
         <a href="#services" class="btn btn-ghost">View services</a>
       </div>
+      <p class="reassure fade-in d3"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 6L9 17l-5-5"/></svg>No commitment. Start with a short message and ask anything.</p>
       <div class="creds fade-in d4">
         <span class="chip">RCI Licensed</span>
         <span class="chip">M.Phil Clinical Psychology</span>
@@ -553,20 +559,6 @@ html.lenis,html.lenis body{height:auto;scroll-behavior:auto}
   </div>
 </section>
 
-<!-- ARTICLES -->
-<section class="articles" id="articles">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <div><p class="eyebrow">Recent articles</p><h2>From the <em>blog.</em></h2></div>
-      <p class="lead">Short, practical writing on therapy, emotions and mental health.</p>
-    </div>
-    <div class="posts stagger">
-      <a href="#" class="post reveal" style="--i:0"><div class="post-art"><div class="a1"></div></div><div><span class="meta">Coming soon</span><h3>What to expect in your first therapy session</h3><p>How an intake session works and how to prepare for it.</p></div></a>
-      <a href="#" class="post reveal" style="--i:1"><div class="post-art"><div class="a2"></div></div><div><span class="meta">Coming soon</span><h3>Stress vs. anxiety: knowing the difference</h3><p>When everyday stress becomes something worth addressing in therapy.</p></div></a>
-    </div>
-  </div>
-</section>
-
 <!-- WHAT I HELP WITH -->
 <section id="help">
   <svg class="fx leaf lf-clay" data-leaf="olive" data-speed="-0.14" data-rot="14" viewBox="0 0 200 300" style="width:clamp(90px,11vw,160px);left:-30px;top:30px"></svg>
@@ -578,10 +570,10 @@ html.lenis,html.lenis body{height:auto;scroll-behavior:auto}
     </div>
     <span class="swipe-hint">Swipe to see all →</span>
     <div class="help-grid stagger swipe" data-dots="d2">
-      <a href="#contact" class="help reveal" style="--i:0"><span class="tag">01</span><h3>Anxiety &amp; OCD</h3><p>Persistent worry, panic, intrusive thoughts and compulsions.</p><span class="go">Enquire →</span></a>
-      <a href="#contact" class="help reveal" style="--i:1"><span class="tag">02</span><h3>Trauma &amp; depression</h3><p>The after-effects of difficult experiences, low mood and loss of motivation.</p><span class="go">Enquire →</span></a>
-      <a href="#contact" class="help reveal" style="--i:2"><span class="tag">03</span><h3>Relationships &amp; couples</h3><p>Conflict, communication and attachment patterns, individually or together.</p><span class="go">Enquire →</span></a>
-      <a href="#contact" class="help reveal" style="--i:3"><span class="tag">04</span><h3>Depth &amp; personality work</h3><p>Long-standing patterns in self-worth, identity and how you relate to others.</p><span class="go">Enquire →</span></a>
+      <a href="#contact" class="help reveal" style="--i:0"><span class="tag">01</span><h3>Anxiety &amp; OCD</h3><span class="feel">“My mind won't switch off.”</span><p>Persistent worry, panic, intrusive thoughts and compulsions.</p><span class="go">Enquire →</span></a>
+      <a href="#contact" class="help reveal" style="--i:1"><span class="tag">02</span><h3>Trauma &amp; depression</h3><span class="feel">“I feel stuck, or numb.”</span><p>The after-effects of difficult experiences, low mood and loss of motivation.</p><span class="go">Enquire →</span></a>
+      <a href="#contact" class="help reveal" style="--i:2"><span class="tag">03</span><h3>Relationships &amp; couples</h3><span class="feel">“We keep having the same fight.”</span><p>Conflict, communication and attachment patterns, individually or together.</p><span class="go">Enquire →</span></a>
+      <a href="#contact" class="help reveal" style="--i:3"><span class="tag">04</span><h3>Depth &amp; personality work</h3><span class="feel">“Why do I always end up here?”</span><p>Long-standing patterns in self-worth, identity and how you relate to others.</p><span class="go">Enquire →</span></a>
     </div>
     <div class="dots" id="d2"></div>
     <p class="positioning reveal">An RCI-licensed clinical psychologist offering <em>psychodynamic</em> and <em>trauma-informed</em> therapy online across India.</p>
@@ -600,6 +592,9 @@ html.lenis,html.lenis body{height:auto;scroll-behavior:auto}
       <details><summary>Do you offer online therapy across India?</summary><div class="ans">Yes. Sessions are held over secure video and are available to clients anywhere in India.</div></details>
       <details><summary>What issues do you work with?</summary><div class="ans">Anxiety, OCD, trauma, depression, personality patterns, body image, relationship difficulties and couples concerns.</div></details>
       <details><summary>How do I book a session?</summary><div class="ans">Use the form below or message on WhatsApp. Sessions run Tuesday to Sunday, 9:30am – 5:30pm IST. Mondays closed.</div></details>
+      <details><summary>I'm not sure therapy is for me. Can I still reach out?</summary><div class="ans">Yes. Many people start unsure. A short message or first conversation is a good way to ask questions and decide, with no obligation to continue.</div></details>
+      <details><summary>What happens in the first session?</summary><div class="ans">We talk about what brings you in, your background and what you'd like to change. You can share at your own pace. By the end, we'll discuss whether working together makes sense and what that would look like.</div></details>
+      <details><summary>What does a session cost?</summary><div class="ans">Fees are shared when you get in touch, along with available times.</div></details>
       <details><summary>Is therapy confidential?</summary><div class="ans">Yes, within standard legal and ethical limits relating to serious risk of harm, which are explained in the first session.</div></details>
     </div>
   </div>
@@ -637,7 +632,7 @@ html.lenis,html.lenis body{height:auto;scroll-behavior:auto}
       </div>
       <div class="field"><label for="fmsg">Brief reason for reaching out <span style="font-weight:400;color:var(--ink-soft)">(optional)</span></label><textarea id="fmsg" name="msg"></textarea></div>
       <button type="submit" class="btn btn-primary">Send via WhatsApp <span class="arr">→</span></button>
-      <p class="form-note" id="formNote">Nothing is stored on this site. Your message goes directly to WhatsApp.</p>
+      <p class="form-note" id="formNote">Only your name is needed. Nothing is stored on this site; your message goes directly to WhatsApp.</p>
     </form>
   </div>
 </section>
@@ -651,7 +646,7 @@ html.lenis,html.lenis body{height:auto;scroll-behavior:auto}
     </div>
     <div>
       <h4>Explore</h4>
-      <ul><li><a href="#services">Services</a></li><li><a href="#about">About</a></li><li><a href="#process">How it works</a></li><li><a href="#articles">Articles</a></li><li><a href="#faq">FAQ</a></li></ul>
+      <ul><li><a href="#services">Services</a></li><li><a href="#about">About</a></li><li><a href="#process">How it works</a></li><li><a href="#faq">FAQ</a></li></ul>
     </div>
     <div>
       <h4>Contact</h4>
@@ -805,6 +800,8 @@ function measure(){
   geo.steps = { top: docTop(steps), h: steps.offsetHeight };
   geo.quote = { top: docTop(quote), h: quote.offsetHeight };
   geo.contact = docTop(contact);
+  const heroCta = document.querySelector('.hero .cta-row');
+  geo.heroEnd = docTop(heroCta) + heroCta.offsetHeight - 80;
   geo.qs = { top: docTop(quoteSec), h: quoteSec.offsetHeight };
   geo.max = Math.max(1, document.documentElement.scrollHeight - vh);
   frame();
@@ -816,7 +813,7 @@ function frame(){
   ticking = false;
   const y = scrollY, k = isPhone() ? .5 : 1;
   header.classList.toggle('scrolled', y > 30);
-  mbar.classList.toggle('hide', y + vh > geo.contact + 80);
+  mbar.classList.toggle('hide', y < geo.heroEnd || y + vh > geo.contact + 80);
 
   // steps progress (horizontal on desktop, vertical on phone)
   const prog = Math.min(1, Math.max(0, (y + vh*.7 - geo.steps.top) / (geo.steps.h || 1)));
